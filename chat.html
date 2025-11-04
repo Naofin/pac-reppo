@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form Layout</title>
+    <link rel="stylesheet" href="stylechat.css" />
+  </head>
+  <body>
+    <!-- Top Navigation -->
+    <header>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <!-- Side Menu -->
+      <aside class="side-menu">
+        <h3>Side Menu</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="content">
+        <section class="contact-form">
+          <div class="form-header">
+            <h2>Contact Us</h2>
+          </div>
+          <p>
+            If you have any questions, please feel free to contact us using the
+            form below:
+          </p>
+
+          <form>
+            <div class="form-row">
+              <div class="field">
+                <label>First Name:</label>
+                <input type="text" />
+              </div>
+              <div class="field">
+                <label>Last Name:</label>
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label>Password:</label>
+                <input type="password" />
+              </div>
+              <div class="field">
+                <label>Verify Password:</label>
+                <input type="password" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label>Email:</label>
+                <input type="email" />
+              </div>
+              <div class="field">
+                <label>Phone:</label>
+                <input type="tel" />
+              </div>
+              <div class="field">
+                <label>Website:</label>
+                <input type="url" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label>Age:</label>
+                <input type="number" />
+              </div>
+              <div class="field">
+                <label>Date of Birth:</label>
+                <input type="date" />
+              </div>
+              <div class="field">
+                <label>Appointment Time:</label>
+                <input type="time" />
+              </div>
+              <div class="field">
+                <label>Volume:</label>
+                <input type="range" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" /> Male</label>
+                <label><input type="radio" name="gender" /> Female</label>
+              </div>
+
+              <div class="field">
+                <label>Hobbies:</label>
+                <label><input type="checkbox" /> Reading</label>
+                <label><input type="checkbox" /> Traveling</label>
+              </div>
+
+              <div class="field">
+                <label>Favorite Color:</label>
+                <input type="color" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label>Country:</label>
+                <select>
+                  <option>Bangladesh</option>
+                  <option>India</option>
+                  <option>USA</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label>Upload File:</label>
+                <input type="file" />
+              </div>
+
+              <div class="field">
+                <label>Bio:</label>
+                <textarea rows="3"></textarea>
+              </div>
+            </div>
+
+            <div class="button-row">
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>

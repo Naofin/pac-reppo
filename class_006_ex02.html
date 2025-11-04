@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 0.9em;
+      }
+      .form-div {
+        width: 450px;
+        margin: 15px auto;
+      }
+      .field {
+        display: grid;
+        grid-template-columns: 120px auto;
+        margin-bottom: 10px;
+        align-items: center;
+      }
+      fieldset {
+        padding: 8px;
+        border: none;
+        border: 1px solid rgb(229, 46, 246);
+      }
+      input,
+      select,
+      textarea {
+        font-size: 0.9rem;
+        padding: 0.25em;
+      }
+      .right {
+        display: flex;
+        justify-content: flex-end;
+      }
+      .btn {
+        display: inline;
+        padding: 5px;
+        min-width: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-div">
+      <h1>Entry From</h1>
+      <form action="2.nh" method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="field">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name here..."
+            />
+          </div>
+          <div class="field">
+            <label for="city">Your City</label>
+            <select name="city" id="city">
+              <option selected>....Select City....</option>
+              <option value="dhk">Dhaka</option>
+              <option value="raj">Rajshahi</option>
+              <option value="Ngn">Naogaon</option>
+              <option value="Pabna">Pabna</option>
+              <option value="nat">Natore</option>
+              <option value="bar">Barisal</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="address">Your Address</label>
+            <textarea name="address" id="address" rows="3"></textarea>
+          </div>
+          <div class="field">
+            <label for="address">Your Gender</label>
+            <div>
+              <input type="radio" name="gender" value="male" id="m" />
+              <label for="m">Male</label>
+              <input type="radio" name="gender" value="female" id="f" />
+              <label for="f">Female</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="pic">Your Picture</label>
+            <input type="file" name="pic" id="pic" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Login Information</legend>
+          <div class="field">
+            <label for="username">User Name</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="UserName here..."
+            />
+          </div>
+          <div class="field">
+            <label for="password">User Name</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="password here..."
+            />
+          </div>
+          <div class="field">
+            <input type="checkbox" name="tc" id="tc" /> I agree to the terms and
+            conditions
+          </div>
+          <div class="right" style="margin-top: 15px">
+            <button type="reset" class="btn" style="margin-right: 4px">
+              Reset
+            </button>
+            <button type="submit" class="btn">Register</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

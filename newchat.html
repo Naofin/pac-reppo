@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form Layout</title>
+    <link rel="stylesheet" href="chatnew.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h3>Side Menu</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <section class="contact-container">
+        <div class="contact-header">
+          <h1>Contact Us</h1>
+        </div>
+
+        <p class="form-desc">
+          If you have any questions, please feel free to contact us using the
+          form below:
+        </p>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name:</label>
+              <input type="text" />
+            </div>
+            <div class="form-group">
+              <label>Last Name:</label>
+              <input type="text" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Password:</label>
+              <input type="password" />
+            </div>
+            <div class="form-group">
+              <label>Verify Password:</label>
+              <input type="password" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email:</label>
+              <input type="email" />
+            </div>
+            <div class="form-group">
+              <label>Phone:</label>
+              <input type="tel" />
+            </div>
+            <div class="form-group">
+              <label>Website:</label>
+              <input type="url" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Age:</label>
+              <input type="number" />
+            </div>
+            <div class="form-group">
+              <label>Date of Birth:</label>
+              <input type="date" />
+            </div>
+            <div class="form-group">
+              <label>Appointment Time:</label>
+              <input type="time" />
+            </div>
+            <div class="form-group">
+              <label>Volume:</label>
+              <input type="range" min="0" max="100" value="50" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Gender:</label><br />
+              <label><input type="radio" name="gender" /> Male</label>
+              <label><input type="radio" name="gender" /> Female</label>
+            </div>
+
+            <div class="form-group">
+              <label>Hobbies:</label><br />
+              <label><input type="checkbox" /> Reading</label>
+              <label><input type="checkbox" /> Traveling</label>
+            </div>
+
+            <div class="form-group">
+              <label>Favorite Color:</label>
+              <input type="color" value="#0000ff" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Country:</label>
+              <select>
+                <option>Bangladesh</option>
+                <option>Italy</option>
+                <option>USA</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Upload File:</label>
+              <input type="file" multiple />
+            </div>
+
+            <div class="form-group">
+              <label>Bio:</label>
+              <textarea rows="3"></textarea>
+            </div>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>Footer</footer>
+  </body>
+</html>

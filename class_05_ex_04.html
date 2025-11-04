@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nav Bar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 0.9em;
+      }
+      .nav {
+        width: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        background-color: rgb(57, 184, 230);
+      }
+      .nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+      .nav ul li {
+        width: 90px;
+        margin-right: 1px;
+      }
+      .nav ul li a {
+        color: rgb(4, 36, 246);
+        text-align: center;
+        text-decoration: none;
+        padding: 7px;
+        display: block;
+        background-color: rgb(195, 239, 239);
+        border-radius: 5px;
+        margin-right: 3px;
+      }
+      .nav ul li a:hover {
+        background-color: rgb(73, 238, 183);
+      }
+      .brand {
+        font-size: 1.5em;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <span class="brand">Brand</span>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
