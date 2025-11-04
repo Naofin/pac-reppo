@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Form Layout</title>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <nav class="top-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Sidebar -->
-    <aside class="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form Layout</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="top-nav">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-    </aside>
-    <!-- Main Content -->
-    <main class="main">
-      <section class="contact-container">
-        <div class="contact-header">
-          <h1>Contact Us</h1>
-        </div>
-        <p class="form-desc">
-          If you have any questions, please feel free to contact us using the
-          from below:
-        </p>
-        <form action="" class="contact-form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="">First Name:</label>
-              <input type="text" />
-            </div>
-            <div class="form-group">
-              <label for="">Last Name:</label>
-              <input type="text" />
-            </div>
+    </nav>
+  </header>
+  <!-- Sidebar -->
+  <aside class="">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </aside>
+  <!-- Main Content -->
+  <main class="main">
+    <section class="contact-container">
+      <div class="contact-header">
+        <h1>Contact Us</h1>
+      </div>
+      <p class="form-desc">
+        If you have any questions, please feel free to contact us using the
+        from below:
+      </p>
+
+      <form action="" class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="">First Name:</label>
+            <input type="text" />
+          </div>
+          <div class="form-group">
+            <label for="">Last Name:</label>
+            <input type="text" />
+          </div>
+
           <div class="form-row">
             <div class="form-group">
               <label for="">Password:</label>
@@ -53,22 +57,97 @@
               <label for="">Verify Password:</label>
               <input type="password" />
             </div>
+
             <div class="form-row">
-            <div class="form-group">
-              <label for="">Email:</label>
-              <input type="email" />
+              <div class="form-group">
+                <label for="">Email:</label>
+                <input type="email" />
+              </div>
+              <div class="form-group">
+                <label for="">Phone:</label>
+                <input type="tel" />
+              </div>
+              <div class="form-group">
+                <label for="">Web Site:</label>
+                <input type="url" />
+              </div>
             </div>
-            <div class="Phone">
-              <label for="">Last Name:</label>
-              <input type="tel" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="">Age:</label>
+                <input type="number" />
+              </div>
+              <div class="form-group">
+                <label for="" Date of Birth:</label>
+                  <input type="date" />
+              </div>
+              <div class="form-group">
+                <label for="">Appointment Time:</label>
+                <input type="time" />
+              </div>
+              <div class="form-group">
+                <label for="">Volume:</label>
+                <input type="range" min="0" max="100" value="50" />
+              </div>
             </div>
-            <div class="Web Site">
-              <label for="">Last Name:</label>
-              <input type="text" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="">Gender:</label><br>
+                <label for=""><input type="radio" name="gender">Male</label>
+                <label for=""><input type="radio" name="gender">Female</label>
+              </div>
+
+              <div class="form-group">
+                <label for="">Hobbies:</label><br>
+                <label for=""> <input type="checkbox">Reading</label>
+                <label for=""> <input type="checkbox">Traveling</label>
+              </div>
+              <div class="form-group">
+                <label for="">Favorite color:</label>
+                <input type="color" />
+                <input type="url" value="#0000ff" />
+              </div>
             </div>
-          </div>
-        </form>
-      </section>
-    </main>
-  </body>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="">Country:</label>
+                <select name="" id="">
+                  <option value="">
+                    Bangladesh
+                  </option>
+                  <option value="">
+                    USA
+                  </option>
+                  <option value="">
+                    Canada
+                  </option>
+                  <option value="">
+                    Uk
+                  </option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="">Update File:</label>
+                <input type="file" multiple />
+              </div>
+
+              <div class="form-group">
+                <label for="">Bio:</label>
+                <textarea rows="3" id=""></textarea>
+              </div>
+            </div>
+
+            <div class="form-buttons">
+              <button type="submit" class="submit-btn">Submit</button>
+              <button type="reset" class="reset-btn">Reset</button>
+            </div>
+      </form>
+    </section>
+  </main>
+</body>
+
 </html>
